@@ -5,7 +5,7 @@ package com.ase.finals.designPattern.factoryMethod;
  */
 public class VehicleFactory {
 
-    public Vehicle getVehicleType(String vehicleType){
+    public static Vehicle getVehicleType(String vehicleType){
         Vehicle vehicle = null;
         switch (vehicleType){
             case "bus" : vehicle = new Bus();
