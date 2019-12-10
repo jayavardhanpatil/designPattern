@@ -5,18 +5,18 @@ package com.ase.finals.designPattern.factoryMethod;
  */
 public class VehicleFactory {
 
-    public static Vehicle getVehicleType(String vehicleType){
+    public Vehicle getVehicleType(VehicleType vehicleType){
         Vehicle vehicle = null;
         switch (vehicleType){
-            case "bus" : vehicle = new Bus();
+            case BUS : vehicle = new Bus();
                     break;
-            case "sedan" : vehicle = new Sedan();
+            case SEDAN : vehicle = new Sedan();
                     break;
-            case "suv" : vehicle = new SUV();
+            case SUV : vehicle = new SUV();
                     break;
-            case "hatchback" : vehicle = new HatchBack();
+            case HATCHBACK: vehicle = new HatchBack();
                     break;
-            case "luxury" : vehicle = new Luxury();
+            case LUXURY: vehicle = new Luxury();
                     break;
             default:
                 System.out.println("Vehicle type is not supported");

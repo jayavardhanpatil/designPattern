@@ -10,16 +10,16 @@ public class Application {
     public static void main(String[] args) {
         VehicleFactory factory = new VehicleFactory();
 
-        Vehicle vehicle = factory.getVehicleType("bus");
+        Vehicle vehicle = factory.getVehicleType(VehicleType.BUS);
         vehicle.manufacture();
 
-        vehicle = factory.getVehicleType("sedan");
+        vehicle = factory.getVehicleType(VehicleType.SEDAN);
         vehicle.manufacture();
 
-        vehicle = factory.getVehicleType("luxury");
+        vehicle = factory.getVehicleType(VehicleType.LUXURY);
         vehicle.manufacture();
 
-        vehicle = factory.getVehicleType("suv");
+        vehicle = factory.getVehicleType(VehicleType.SUV);
         vehicle.manufacture();
     }
 }
