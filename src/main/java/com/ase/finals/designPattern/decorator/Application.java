@@ -1,4 +1,4 @@
-package com.ase.finals.designPattern.flyweight;
+package com.ase.finals.designPattern.decorator;
 
 /**
  * Created by jayavardhanpatil on 12/9/19
