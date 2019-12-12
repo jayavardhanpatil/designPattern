@@ -17,6 +17,6 @@ public class SedanCar extends Vehicle {
 
     @Override
     void fitInteriors() {
-        System.out.println("Fitting sedan for Interior");
+        System.out.println("Fitting sedan car Interior");
     }
 }
