@@ -3,9 +3,20 @@ package com.ase.finals.designPattern.facade;
 /**
  * Created by jayavardhanpatil on 12/10/19
  */
-public class SedanCar implements Vehicle {
+public class SedanCar extends Vehicle {
+
     @Override
-    public void manufacture(int quantity) {
-        System.out.println("Manufacturing " + quantity + " SEDAN car(s)");
+    void collectParts() {
+        System.out.println("Collecting Parts for sedan Car");
+    }
+
+    @Override
+    void assembleParts() {
+        System.out.println("Assembling Parts for Sedan Car");
+    }
+
+    @Override
+    void fitInteriors() {
+        System.out.println("Fitting sedan for Interior");
     }
 }

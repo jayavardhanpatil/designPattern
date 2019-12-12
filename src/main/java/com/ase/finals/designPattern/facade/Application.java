@@ -8,8 +8,13 @@ public class Application {
     public static void main(String[] args) {
 
         CarMaker carMaker = new CarMaker();
-        carMaker.OrderHatchBackCar(4);
-        carMaker.OrderLuxuryCar(2);
-        carMaker.OrderSedanCar(4);
+        System.out.println("\n1) Order for HatchBack Car");
+        carMaker.OrderHatchBackCar();
+
+        System.out.println("\n2) Order for Luxury Car");
+        carMaker.OrderLuxuryCar();
+
+        System.out.println("\n3) Order for Sedan Car");
+        carMaker.OrderSedanCar();
     }
 }

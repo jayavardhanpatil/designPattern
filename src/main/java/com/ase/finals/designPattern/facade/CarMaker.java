@@ -17,19 +17,19 @@ public class CarMaker {
         hatchBackCar = new HatchBackCar();
     }
 
-    public void OrderLuxuryCar(int quantity){
-        luxuryCar.manufacture(quantity);
+    public void OrderLuxuryCar(){
+        luxuryCar.manufacture();
     }
 
-    public void OrderSedanCar(int quantity){
-        sedanCar.manufacture(quantity);
+    public void OrderSedanCar(){
+        sedanCar.manufacture();
     }
 
-    public void OrderSportsCar(int quantity){
-        sportsCar.manufacture(quantity);
+    public void OrderSportsCar(){
+        sportsCar.manufacture();
     }
 
-    public void OrderHatchBackCar(int quantity){
-        hatchBackCar.manufacture(quantity);
+    public void OrderHatchBackCar(){
+        hatchBackCar.manufacture();
     }
 }
